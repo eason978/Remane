@@ -324,7 +324,8 @@ namespace Rename
             docMovieContext.LoadHtml(doc.DocumentNode.SelectSingleNode(@"//*[@id='main']").InnerHtml);
             string strResult = docMovieContext.DocumentNode.SelectSingleNode("./table[1]/tr[1]/td[2]").InnerText.Trim();
 
-            var regex = new Regex(@"[^0-9]\s+(\d+)\s+[^0-9]");
+            //var regex = new Regex(@"[^0-9]\s+(\d+)\s+[^0-9]");
+            var regex = new Regex(@"\((\d+)\)");
             var match = regex.Match(strResult);
             int intNumRlt = 0;
             if(match.Groups.Count > 0)

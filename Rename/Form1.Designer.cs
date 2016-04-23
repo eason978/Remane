@@ -65,6 +65,7 @@
             this.textBox_selected_folder.Name = "textBox_selected_folder";
             this.textBox_selected_folder.Size = new System.Drawing.Size(698, 22);
             this.textBox_selected_folder.TabIndex = 1;
+            this.textBox_selected_folder.Text = "\\\\EDS2\\video\\Unsort";
             // 
             // button1
             // 
